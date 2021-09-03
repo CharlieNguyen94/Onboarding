@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9538453E26E2922000A580E0 /* PlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538453D26E2922000A580E0 /* PlistTests.swift */; };
 		95E4ACC226E23F5600DFCE9C /* OnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACC126E23F5600DFCE9C /* OnboardingApp.swift */; };
 		95E4ACC426E23F5600DFCE9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACC326E23F5600DFCE9C /* ContentView.swift */; };
 		95E4ACC626E23F5800DFCE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACC526E23F5800DFCE9C /* Assets.xcassets */; };
@@ -19,7 +20,19 @@
 		95E4ACDB26E2568600DFCE9C /* OnboardingContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9538453726E291CE00A580E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95E4ACB626E23F5600DFCE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95E4ACBD26E23F5600DFCE9C;
+			remoteInfo = Onboarding;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		9538453326E291CE00A580E0 /* OnboardingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnboardingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9538453D26E2922000A580E0 /* PlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistTests.swift; sourceTree = "<group>"; };
 		95E4ACBE26E23F5600DFCE9C /* Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E4ACC126E23F5600DFCE9C /* OnboardingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingApp.swift; sourceTree = "<group>"; };
 		95E4ACC326E23F5600DFCE9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9538453026E291CE00A580E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95E4ACBB26E23F5600DFCE9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +64,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9538453426E291CE00A580E0 /* OnboardingTests */ = {
+			isa = PBXGroup;
+			children = (
+				9538453C26E291FC00A580E0 /* Plist */,
+			);
+			path = OnboardingTests;
+			sourceTree = "<group>";
+		};
+		9538453C26E291FC00A580E0 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9538453D26E2922000A580E0 /* PlistTests.swift */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		95E4ACB526E23F5600DFCE9C = {
 			isa = PBXGroup;
 			children = (
 				95E4ACC026E23F5600DFCE9C /* Onboarding */,
+				9538453426E291CE00A580E0 /* OnboardingTests */,
 				95E4ACBF26E23F5600DFCE9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				95E4ACBE26E23F5600DFCE9C /* Onboarding.app */,
+				9538453326E291CE00A580E0 /* OnboardingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +134,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9538453226E291CE00A580E0 /* OnboardingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9538453B26E291CE00A580E0 /* Build configuration list for PBXNativeTarget "OnboardingTests" */;
+			buildPhases = (
+				9538452F26E291CE00A580E0 /* Sources */,
+				9538453026E291CE00A580E0 /* Frameworks */,
+				9538453126E291CE00A580E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9538453826E291CE00A580E0 /* PBXTargetDependency */,
+			);
+			name = OnboardingTests;
+			productName = OnboardingTests;
+			productReference = 9538453326E291CE00A580E0 /* OnboardingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		95E4ACBD26E23F5600DFCE9C /* Onboarding */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95E4ACCC26E23F5800DFCE9C /* Build configuration list for PBXNativeTarget "Onboarding" */;
@@ -123,6 +179,11 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					9538453226E291CE00A580E0 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+						TestTargetID = 95E4ACBD26E23F5600DFCE9C;
+					};
 					95E4ACBD26E23F5600DFCE9C = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -142,11 +203,19 @@
 			projectRoot = "";
 			targets = (
 				95E4ACBD26E23F5600DFCE9C /* Onboarding */,
+				9538453226E291CE00A580E0 /* OnboardingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9538453126E291CE00A580E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95E4ACBC26E23F5600DFCE9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +229,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9538452F26E291CE00A580E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9538453E26E2922000A580E0 /* PlistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95E4ACBA26E23F5600DFCE9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,7 +253,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9538453826E291CE00A580E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95E4ACBD26E23F5600DFCE9C /* Onboarding */;
+			targetProxy = 9538453726E291CE00A580E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9538453926E291CE00A580E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F27HQ4FLX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlienguyen.OnboardingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Onboarding.app/Onboarding";
+			};
+			name = Debug;
+		};
+		9538453A26E291CE00A580E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F27HQ4FLX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlienguyen.OnboardingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Onboarding.app/Onboarding";
+			};
+			name = Release;
+		};
 		95E4ACCA26E23F5800DFCE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +492,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9538453B26E291CE00A580E0 /* Build configuration list for PBXNativeTarget "OnboardingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9538453926E291CE00A580E0 /* Debug */,
+				9538453A26E291CE00A580E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		95E4ACB926E23F5600DFCE9C /* Build configuration list for PBXProject "Onboarding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
