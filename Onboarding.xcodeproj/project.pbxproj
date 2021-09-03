@@ -10,6 +10,7 @@
 		956F061C26E294D0005E71EF /* PlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F061B26E294D0005E71EF /* PlistTests.swift */; };
 		956F061F26E2B908005E71EF /* OnboardingContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F061E26E2B907005E71EF /* OnboardingContentTests.swift */; };
 		956F062126E2BAA1005E71EF /* OnboardingContentMockImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F062026E2BAA1005E71EF /* OnboardingContentMockImplementation.swift */; };
+		956F062326E2CAFF005E71EF /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F062226E2CAFF005E71EF /* Asset.swift */; };
 		95E4ACC226E23F5600DFCE9C /* OnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACC126E23F5600DFCE9C /* OnboardingApp.swift */; };
 		95E4ACC426E23F5600DFCE9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACC326E23F5600DFCE9C /* ContentView.swift */; };
 		95E4ACC626E23F5800DFCE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACC526E23F5800DFCE9C /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */; };
 		95E4ACD526E243C600DFCE9C /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */; };
 		95E4ACD726E24F1600DFCE9C /* OnboardingContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACD626E24F1600DFCE9C /* OnboardingContent.plist */; };
-		95E4ACD926E250D100DFCE9C /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD826E250D100DFCE9C /* PlistManager.swift */; };
 		95E4ACDB26E2568600DFCE9C /* OnboardingContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,7 @@
 		956F061B26E294D0005E71EF /* PlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistTests.swift; sourceTree = "<group>"; };
 		956F061E26E2B907005E71EF /* OnboardingContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentTests.swift; sourceTree = "<group>"; };
 		956F062026E2BAA1005E71EF /* OnboardingContentMockImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentMockImplementation.swift; sourceTree = "<group>"; };
+		956F062226E2CAFF005E71EF /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		95E4ACBE26E23F5600DFCE9C /* Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E4ACC126E23F5600DFCE9C /* OnboardingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingApp.swift; sourceTree = "<group>"; };
 		95E4ACC326E23F5600DFCE9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		95E4ACD626E24F1600DFCE9C /* OnboardingContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OnboardingContent.plist; sourceTree = "<group>"; };
-		95E4ACD826E250D100DFCE9C /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,8 +141,8 @@
 				95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */,
 				95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */,
 				95E4ACD626E24F1600DFCE9C /* OnboardingContent.plist */,
-				95E4ACD826E250D100DFCE9C /* PlistManager.swift */,
 				95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */,
+				956F062226E2CAFF005E71EF /* Asset.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -259,12 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95E4ACD926E250D100DFCE9C /* PlistManager.swift in Sources */,
 				95E4ACC426E23F5600DFCE9C /* ContentView.swift in Sources */,
 				95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */,
 				95E4ACC226E23F5600DFCE9C /* OnboardingApp.swift in Sources */,
 				95E4ACD126E2415600DFCE9C /* OnboardingItem.swift in Sources */,
 				95E4ACDB26E2568600DFCE9C /* OnboardingContentManager.swift in Sources */,
+				956F062326E2CAFF005E71EF /* Asset.swift in Sources */,
 				95E4ACD526E243C600DFCE9C /* OnboardingScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

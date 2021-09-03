@@ -31,8 +31,7 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: .constant(!hasSeenOnboarding),
                          content: {
-            let plistManager = PlistManagerImplementation()
-            let onboardingContentManager = OnboardingContentManagerImplementation(manager: plistManager)
+            let onboardingContentManager = OnboardingContentManagerImplementation()
             
             OnboardingScreenView(manager: onboardingContentManager) {
                 hasSeenOnboarding = true

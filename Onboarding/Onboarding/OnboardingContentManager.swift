@@ -10,7 +10,7 @@ import Foundation
 protocol OnboardingContentManager {
     var limit: Int { get }
     var items: [OnboardingItem] { get }
-    init(manager: PlistManager)
+    
 }
 
 final class OnboardingContentManagerImplementation: OnboardingContentManager {
@@ -19,9 +19,6 @@ final class OnboardingContentManagerImplementation: OnboardingContentManager {
         items.count - 1
     }
     
-    var items: [OnboardingItem]
+    let items: [OnboardingItem] = []
     
-    init(manager: PlistManager) {
-        self.items = manager.convert(plist: "OnboardingContent")
-    }
 }

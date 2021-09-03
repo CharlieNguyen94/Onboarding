@@ -38,6 +38,6 @@ struct OnboardingScreenView: View {
 
 struct OnboardingScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingScreenView(manager: OnboardingContentManagerImplementation(manager: PlistManagerImplementation())) {}
+        OnboardingScreenView(manager: OnboardingContentManagerImplementation()) {}
     }
 }
