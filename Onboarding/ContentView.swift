@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    
     var body: some View {
         TabView {
             Text("🏡 Home Screen")
@@ -26,6 +29,15 @@ struct ContentView: View {
                     Text("Settings")
                 }
         }
+        .fullScreenCover(isPresented: .constant(!hasSeenOnboarding),
+                         content: {
+            let plistManager = PlistManagerImplementation()
+            let onboardingContentManager = OnboardingContentManagerImplementation(manager: plistManager)
+            
+            OnboardingScreenView(manager: onboardingContentManager) {
+                hasSeenOnboarding = true
+            }
+        })
     }
 }
 
