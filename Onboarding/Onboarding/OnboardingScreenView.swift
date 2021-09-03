@@ -10,21 +10,23 @@ import SwiftUI
 struct OnboardingScreenView: View {
     var body: some View {
         TabView {
-            OnboardingView(item: OnboardingItem(title: "",
+            OnboardingView(item: OnboardingItem(title: "1",
                                                 content: "",
                                                 sfSymbol: ""))
                 .tag(0)
             
-            OnboardingView(item: OnboardingItem(title: "",
+            OnboardingView(item: OnboardingItem(title: "2",
                                                 content: "",
                                                 sfSymbol: ""))
                 .tag(1)
             
-            OnboardingView(item: OnboardingItem(title: "",
+            OnboardingView(item: OnboardingItem(title: "3",
                                                 content: "",
                                                 sfSymbol: ""))
                 .tag(2)
         }
+        .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
     }
 }
 
