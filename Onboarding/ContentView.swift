@@ -25,10 +25,6 @@ struct ContentView: View {
                     Image(systemName: "gearshape")
                     Text("Settings")
                 }
-        }.onAppear {
-            let plistManager = PlistManagerImplementation()
-            let onboardingContentManager = OnboardingContentManagerImplementation(manager: plistManager)
-            print(onboardingContentManager.items)
         }
     }
 }

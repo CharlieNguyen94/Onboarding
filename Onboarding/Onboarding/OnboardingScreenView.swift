@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct OnboardingScreenView: View {
+    
+    let manager: OnboardingContentManager
+    let handler: OnboardingGetStartedAction
+    
+    @State private var selected = 0
+    
+    init(manager: OnboardingContentManager, handler: @escaping OnboardingGetStartedAction) {
+        self.manager = manager
+        self.handler = handler
+    }
+    
     var body: some View {
-        TabView {
-            OnboardingView(item: OnboardingItem(title: "1",
-                                                content: "",
-                                                sfSymbol: ""))
-                .tag(0)
+        
+        TabView(selection: $selected) {
             
-            OnboardingView(item: OnboardingItem(title: "2",
-                                                content: "",
-                                                sfSymbol: ""))
-                .tag(1)
+            ForEach(manager.items.indices) { index in
+                OnboardingView(item: manager.items[index],
+                               limit: manager.limit,
+                               index: $selected,
+                               handler: handler)
+            }
             
-            OnboardingView(item: OnboardingItem(title: "3",
-                                                content: "",
-                                                sfSymbol: ""))
-                .tag(2)
         }
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
@@ -32,6 +38,6 @@ struct OnboardingScreenView: View {
 
 struct OnboardingScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingScreenView()
+        OnboardingScreenView(manager: OnboardingContentManagerImplementation(manager: PlistManagerImplementation())) {}
     }
 }
