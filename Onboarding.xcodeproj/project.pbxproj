@@ -13,6 +13,7 @@
 		95E4ACC926E23F5800DFCE9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACC826E23F5800DFCE9C /* Preview Assets.xcassets */; };
 		95E4ACD126E2415600DFCE9C /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD026E2415600DFCE9C /* OnboardingItem.swift */; };
 		95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */; };
+		95E4ACD526E243C600DFCE9C /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		95E4ACC826E23F5800DFCE9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95E4ACD026E2415600DFCE9C /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				95E4ACD026E2415600DFCE9C /* OnboardingItem.swift */,
 				95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */,
+				95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */,
 				95E4ACC226E23F5600DFCE9C /* OnboardingApp.swift in Sources */,
 				95E4ACD126E2415600DFCE9C /* OnboardingItem.swift in Sources */,
+				95E4ACD526E243C600DFCE9C /* OnboardingScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
