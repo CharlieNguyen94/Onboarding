@@ -16,6 +16,7 @@
 		95E4ACD526E243C600DFCE9C /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */; };
 		95E4ACD726E24F1600DFCE9C /* OnboardingContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACD626E24F1600DFCE9C /* OnboardingContent.plist */; };
 		95E4ACD926E250D100DFCE9C /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD826E250D100DFCE9C /* PlistManager.swift */; };
+		95E4ACDB26E2568600DFCE9C /* OnboardingContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		95E4ACD626E24F1600DFCE9C /* OnboardingContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OnboardingContent.plist; sourceTree = "<group>"; };
 		95E4ACD826E250D100DFCE9C /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
+		95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				95E4ACD426E243C600DFCE9C /* OnboardingScreenView.swift */,
 				95E4ACD626E24F1600DFCE9C /* OnboardingContent.plist */,
 				95E4ACD826E250D100DFCE9C /* PlistManager.swift */,
+				95E4ACDA26E2568600DFCE9C /* OnboardingContentManager.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */,
 				95E4ACC226E23F5600DFCE9C /* OnboardingApp.swift in Sources */,
 				95E4ACD126E2415600DFCE9C /* OnboardingItem.swift in Sources */,
+				95E4ACDB26E2568600DFCE9C /* OnboardingContentManager.swift in Sources */,
 				95E4ACD526E243C600DFCE9C /* OnboardingScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
