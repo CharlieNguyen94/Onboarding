@@ -68,8 +68,9 @@ struct OnboardingView: View {
             .opacity(index == limit ? 1 : 0)
             .allowsHitTesting(index == limit)
             .animation(.easeInOut(duration: 0.25))
+            
+            Spacer()
         }
-        .padding(.bottom, 150)
     }
 }
 

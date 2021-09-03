@@ -26,5 +26,13 @@
 		<key>sfSymbol</key>
 		<string>heart</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Coming Soon</string>
+		<key>content</key>
+		<string>We&apos;ve got some new features coming soon</string>
+		<key>sfSymbol</key>
+		<string>wand.and.stars</string>
+	</dict>
 </array>
 </plist>
