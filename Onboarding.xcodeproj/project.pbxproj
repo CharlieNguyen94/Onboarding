@@ -11,6 +11,8 @@
 		95E4ACC426E23F5600DFCE9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACC326E23F5600DFCE9C /* ContentView.swift */; };
 		95E4ACC626E23F5800DFCE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACC526E23F5800DFCE9C /* Assets.xcassets */; };
 		95E4ACC926E23F5800DFCE9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4ACC826E23F5800DFCE9C /* Preview Assets.xcassets */; };
+		95E4ACD126E2415600DFCE9C /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD026E2415600DFCE9C /* OnboardingItem.swift */; };
+		95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		95E4ACC326E23F5600DFCE9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95E4ACC526E23F5800DFCE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95E4ACC826E23F5800DFCE9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95E4ACD026E2415600DFCE9C /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		95E4ACC026E23F5600DFCE9C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				95E4ACCF26E2414000DFCE9C /* Onboarding */,
 				95E4ACC126E23F5600DFCE9C /* OnboardingApp.swift */,
 				95E4ACC326E23F5600DFCE9C /* ContentView.swift */,
 				95E4ACC526E23F5800DFCE9C /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				95E4ACC826E23F5800DFCE9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95E4ACCF26E2414000DFCE9C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				95E4ACD026E2415600DFCE9C /* OnboardingItem.swift */,
+				95E4ACD226E241DA00DFCE9C /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E4ACC426E23F5600DFCE9C /* ContentView.swift in Sources */,
+				95E4ACD326E241DA00DFCE9C /* OnboardingView.swift in Sources */,
 				95E4ACC226E23F5600DFCE9C /* OnboardingApp.swift in Sources */,
+				95E4ACD126E2415600DFCE9C /* OnboardingItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
